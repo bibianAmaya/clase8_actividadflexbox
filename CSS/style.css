@@ -1,0 +1,163 @@
+/* Regals CSS
+selector{
+    propiedad:"valor";
+}
+*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+body{
+font-family: sans-serif;
+background-color: #f8f4f4;
+}
+/*Estilo del header*/
+header{
+    background-color: rgb(50, 50, 50);
+    /*padding: 10px;
+    padre del flexbox*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+}
+/*modificar la 1 flexbox*/
+.logotipo{
+    /*creo otro flexbox*/
+    display: flex;
+    padding: 16px;
+    align-items: center;
+}
+.empresa, .pizza, .front, .publicidad,.Titlepizza{
+    font-size: 24px;
+    font-weight: bold;
+    color:#F3F3F3;
+}
+.Titlepizza{
+    margin-top: 2rem;
+}
+.empresa{
+    padding: 0px 0px 0px 16px;
+}
+.pizza{
+    color:#39B24A ;
+}
+.front, .envio,.Titlepizza{
+    color:#FC200C ;
+}
+/*modificar 2 flexbox*/
+nav ul{
+    list-style: none;
+    /*crear flexbox*/
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+.item-nav{
+    color: #fff;
+    text-decoration: none;
+}
+/*modificar main y creando flexbox de padre*/
+.SeccionMitad{
+    /*padre del flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 25px;   
+}
+.Imgdeliver{
+    position: relative;
+    Width:620px; 
+}
+.deliveryImg{
+    width: 620px;
+    border-radius: 10px;
+}
+.SeccionPizza{
+    Width: 620px;
+    background-color:white;
+    height: 59vh;
+    margin-left: 20px;
+    margin-bottom: 34px;
+    border-radius: 5px;
+}
+.SeccionPizza1{
+    display: flex;
+    justify-content:space-around;
+    align-items: center ;
+    Height:330px;  
+    border-radius: 10px;
+}
+.Seccionitems{
+    Width:173px;
+    Height:178px;    
+    font-weight: bold;
+    line-height:2.5rem;
+    margin-left: 1rem;
+}
+.pizzaTop5{
+font-size: 20px;
+}
+.Pub{
+    position: relative;
+    bottom:410px;
+    left: 8px;
+}
+.Titlepizza{
+    text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(50, 50, 50);
+    align-items: center;
+}
+.Footlogotipo{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+footer ul li {
+    list-style: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.FootLink{
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+main{
+    height: 70vh;
+}
+i{
+    color: white;
+    font-size: xxx-large;
+    display: none;
+}
+.Ic-menu{
+    display: none;
+}
+@media(max-width:800px){
+    .SeccionMitad{
+        flex-direction: column-reverse;
+        height: 145vh;
+        margin-bottom: 50px;
+    }
+    footer{
+        flex-direction: row-reverse;
+        height: 30vh;
+    }
+    main {
+        margin-bottom: 500px;
+    }
+    .Ic-menu{
+        display: block;
+        margin-right: 15px;
+    }
+    .menu{
+        display: none;
+    }
+
+}
